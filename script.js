@@ -99,7 +99,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 // CONTACT FORM SETUP:
 // Replace this value with your real email address before using the form.
-const recipientEmail = "your-email@example.com";
+const recipientEmail = "eeexbeee@gmail.com";
 
 document.getElementById("contact-form").addEventListener("submit", event => {
   event.preventDefault();
