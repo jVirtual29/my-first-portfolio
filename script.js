@@ -110,8 +110,8 @@ document.getElementById("contact-form").addEventListener("submit", event => {
   const message = form.elements.message.value.trim();
   const note = document.getElementById("form-note");
 
-  if (recipientEmail === "your-email@example.com") {
-    note.textContent = "Please add your email address to the recipientEmail setting in script.js first.";
+  if (recipientEmail === "eeexbeee@gmail.com") {
+    note.textContent = "eeexbeee@gmail.com";
     return;
   }
 
