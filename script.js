@@ -97,27 +97,3 @@ filterButtons.forEach(button => {
 document.getElementById("project-count").textContent = projectCards.length;
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// CONTACT FORM SETUP:
-// Replace this value with your real email address before using the form.
-const recipientEmail = "eeexbeee@gmail.com";
-
-document.getElementById("contact-form").addEventListener("submit", event => {
-  event.preventDefault();
-
-  const form = event.currentTarget;
-  const name = form.elements.name.value.trim();
-  const email = form.elements.email.value.trim();
-  const message = form.elements.message.value.trim();
-  const note = document.getElementById("form-note");
-
-  if (recipientEmail === "eeexbeee@gmail.com") {
-    note.textContent = "eeexbeee@gmail.com";
-    return;
-  }
-
-  const subject = encodeURIComponent(`Portfolio message from ${name}`);
-  const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
-  note.textContent = "Opening your email application...";
-  window.location.href =
-    `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
-});
