@@ -30,13 +30,6 @@ form.addEventListener("submit", async (e) => {
       message: form.message.value,
       createdAt: serverTimestamp()
     });
-    alert("Message sent! Thank you.");
-    form.reset();
-  } catch (err) {
-    console.error(err);
-    alert("Something went wrong. Please try again.");
-  }
-
-  button.disabled = false;
-  button.textContent = "Send ↗";
-});
+   const note = document.getElementById("form-note");
+note.textContent = "Message sent! Thank you.";   // on success
+note.textContent = "Something went wrong.";      // in the catch block
